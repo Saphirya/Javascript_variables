@@ -47,10 +47,6 @@ console.log(b); // undefined car l’initialisation se fait lors de la remontée
 var b = 1; // assignation
 console.log(b); // 1
 
-//LET ou CONST//
-console.log(c); // Uncaught ReferenceError: a is not defined
-let c;
-
 //a variable a est préparée en mémoire lors de la remontée mais elle n'est pas initialisée à undefined.//
 //Les phases sont les suivantes ://
 // Phase de déclaration lors de la remontée, si on tente d'accéder à la variable let
@@ -61,3 +57,35 @@ a = 2; // assignation de la valeur 2
 // ici a vaut 2
 
 //types
+
+//string
+const name = "jean";
+//number
+const age = 20;
+//null
+const hobbies = null;
+console.log(typeof hobbies);
+//boolean
+const isDeveloper = true;
+//array
+const job = ["developer", "designer"];
+
+console.log(name, age, isDeveloper, job);
+
+let sym = Symbol();
+console.log(typeof sym);
+// OBJET LITERAL
+const ville = {
+  name: "paris",
+  population: 1000000,
+};
+const greetings = function () {
+  console.log("bonjour");
+};
+console.log(typeof greetings);
+
+const today = new Date();
+console.log(today);
+
+const arr = [1, 2, 3];
+console.log(arr);
