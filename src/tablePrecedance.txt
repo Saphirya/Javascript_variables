@@ -1,0 +1,24 @@
+Tableau des Précédences
+Voici la table des précédences, classée de la plus haute (19) à la plus basse (1).
+
+https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Operator_precedence
+Précédence	Type d'opérateur	Associativité	Opérateurs individuels
+19	Groupement	Non applicable	( … )
+18	Accès à un membre	Gauche à droite	obj.prop, obj[expr], func(), ?.
+17	new (sans arguments)	Droite à gauche	new obj
+16	Postfixe	Non applicable	x++, x--
+15	Préfixe, Unaires	Droite à gauche	!x, ~x, +x, -x, ++x, --x, typeof, void, delete, await
+14	Exponentiation	Droite à gauche	x ** y
+13	Multiplication, Division, Modulo	Gauche à droite	x * y, x / y, x % y
+12	Addition, Soustraction	Gauche à droite	x + y, x - y
+11	Décalage binaire	Gauche à droite	x << y, x >> y, x >>> y
+10	Comparaisons	Gauche à droite	<, <=, >, >=, in, instanceof
+9	Égalités	Gauche à droite	==, !=, ===, !==
+8	ET binaire	Gauche à droite	x & y
+7	XOR binaire	Gauche à droite	x ^ y
+6	OU binaire	Gauche à droite	`x
+5	ET logique	Gauche à droite	x && y
+4	OU logique, Coalescence des nuls	Gauche à droite	`x
+3	Opérateur ternaire	Droite à gauche	cond ? x : y
+2	Affectation	Droite à gauche	=, +=, -=, **=, *=, /=, %=
+1	Virgule	Gauche à droite	x, y
