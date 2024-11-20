@@ -9,3 +9,21 @@ b += 2;
 b += 5;
 console.log(b);
 console.log(a);
+
+let c = 1,
+  d = 8;
+console.log(true + "");
+console.log(true === "true");
+console.log(1 === "1");
+console.log(3 < 2 < 1);
+console.log(!!true);
+console.log(true || false);
+console.log(true && false);
+
+if (c && d) {
+  console.log("c'est défini");
+}
+
+if (c || d) {
+  console.log("let's go");
+}
